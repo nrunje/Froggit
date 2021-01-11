@@ -82,6 +82,7 @@ class Lane(object):         # You are permitted to change the parent class if yo
 
     def setObjs(self,value):
         """
+        Sets the obstacles for the lane.
         """
         self._objs = value
 
@@ -107,6 +108,15 @@ class Lane(object):         # You are permitted to change the parent class if yo
     def __init__(self,json_dict, num_lane, bottom_num):
         """
         Initializes all the lane objects
+
+        Parameter json_dict: JSON dictionary for level
+        Preconditon: json_dict is a valid JSON file
+
+        Parameter num_lane: Indicates which lane is being targeted
+        Precondition: num_lane is an integer
+
+        Parameter bottom_num: Indicates the horizontal bottom of lane
+        Precondition: bottom_num is an integer
         """
         this_game_width = json_dict['size'][0] * GRID_SIZE
 

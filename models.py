@@ -20,7 +20,7 @@ need a custom model for the same reason that the frog does.
 If you are unsure about  whether to make a new class or not, please ask on Piazza. We
 will answer.
 
-# YOUR NAME AND NETID HERE
+Nicholas J. Runje (njr85)
 21 December 2020
 """
 from consts import *
